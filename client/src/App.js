@@ -1,9 +1,15 @@
+import React from 'react';
 import './App.css';
+import Index from './components/index/index';
+import NavBar from './components/navbar/navbar';
 
 function App() {
+  
   return (
+    
     <div className="App">
-      <h1>Henry Videogames</h1>
+      <NavBar/>
+      <Index/>
     </div>
   );
 }
