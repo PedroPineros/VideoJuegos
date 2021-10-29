@@ -9,7 +9,7 @@ const { KEY } = process.env;
 const getAllGames = async (req, res, next) => {
     try {
         let { gameName, page, order, rating } = req.query;
-        var allGamesApi, allGamesDb, GamesConcat, genresDb, genresApi, genresConcat;
+        var allGamesApi, allGamesDb, GamesConcat;
         page = page ? page : 1;
         const limitPage = 15;
         //-----------Todos los juegos------------------//
